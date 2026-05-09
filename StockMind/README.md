@@ -15,20 +15,8 @@ An AI-powered stock trading assistant built with **LangGraph**, **Groq (LLaMA)**
 
 ## 🏗️ Architecture
 
-```mermaid
-flowchart TD
-    User -->|message| main["src/hitl/main.py\nchat loop · ainvoke · interrupt handler"]
-    main --> graph["src/hitl/graph.py\nLangGraph · StateGraph · MemorySaver"]
-    graph --> llm["Groq — LLaMA 3.1\nreasons · selects tool · responds"]
+![Uploading image.png…]()
 
-    llm -->|get price| mcp["MCP stock server\nstock_server.py · stdio\nYahoo Finance API"]
-    llm -->|buy stock| buy["buy_stock tool\ntools.py · local @tool\ninterrupt() → human approval"]
-
-    buy --> human["Human approval\nyes → execute · no → cancel"]
-
-    mcp -.->|result| llm
-    human -.->|Command resume| llm
-```
 
 | Component | File | Role |
 |---|---|---|
