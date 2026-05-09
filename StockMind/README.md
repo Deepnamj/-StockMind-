@@ -14,8 +14,8 @@ An AI-powered stock trading assistant built with **LangGraph**, **Groq (LLaMA)**
 ---
 
 ## 🏗️ Architecture
+<img width="896" height="646" alt="image" src="https://github.com/user-attachments/assets/1330a9e4-8009-4cf1-a204-1fc387939d99" />
 
-![Uploading image.png…]()
 
 
 | Component | File | Role |
